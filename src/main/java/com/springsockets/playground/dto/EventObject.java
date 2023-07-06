@@ -9,12 +9,6 @@ import java.util.UUID;
 @Setter
 public class EventObject {
     private String event;
-    private Message message;
+    private MessageDTO message;
 }
 
-class Message {
-    private String content;
-    private UUID sender;
-    private UUID receiver;
-
-}

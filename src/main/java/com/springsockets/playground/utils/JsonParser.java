@@ -8,4 +8,9 @@ public class JsonParser {
         ObjectMapper objectMapper = new ObjectMapper();
         return objectMapper.readTree(jsonString);
     }
+
+    public static String toJson(Object object) throws Exception {
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(object);
+    }
 }
